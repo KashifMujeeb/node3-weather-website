@@ -1,5 +1,3 @@
-// import { response } from "express"
-
 console.log('client side JS file is loaded')
 
 // fetch('http://puzzle.mead.io/puzzle').then((response) => {
@@ -7,10 +5,6 @@ console.log('client side JS file is loaded')
 //         console.log(data)
 //     })
 // })
-
-
-
-
 
 const weatherForm = document.querySelector('form')
 const search = document.querySelector('input')
