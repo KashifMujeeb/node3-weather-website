@@ -5,8 +5,8 @@ orbs:
 workflows:
   heroku_deploy:
     jobs:
-    - build
-   - heroku/deploy-via-git:  
+      - build
+      - heroku/deploy-via-git:  
           requires:
             - build
           filters:
@@ -30,4 +30,3 @@ jobs:
       - run:
           name: Run test
           command: npm test
-          
