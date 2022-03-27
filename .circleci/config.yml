@@ -5,7 +5,7 @@ orbs:
 workflows:
   heroku_deploy:
     jobs:
-      - build
+    - build
       - heroku/deploy-via-git:  
           requires:
             - build
@@ -14,6 +14,9 @@ workflows:
               only: main
 jobs:
   build:
+    filters:
+      branches:
+        only: main
     docker:
       - image: circleci/node:10.16.0
     steps:
