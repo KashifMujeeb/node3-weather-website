@@ -15,10 +15,6 @@ workflows:
                 - main
 jobs:
   build:
-    filters:
-      branches:
-        only:
-          - main
     docker:
       - image: circleci/node:10.16.0
     steps:
@@ -35,3 +31,4 @@ jobs:
       - run:
           name: Run test
           command: npm test
+          
