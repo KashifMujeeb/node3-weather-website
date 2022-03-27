@@ -14,9 +14,6 @@ workflows:
               only: main
 jobs:
   build:
-    filters:
-      branches:
-        only: main
     docker:
       - image: circleci/node:10.16.0
     steps:
